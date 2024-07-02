@@ -1,0 +1,35 @@
+:root {
+  --cell-size: 40px;
+  --caption-font-size: 18px;
+  --today-color: #e6842d;
+  --accent-color: #e6a873;
+  --background-color: #f0f0f0;
+  --accent-color-dark: #3003e1;
+  --background-color-dark: #180270;
+  --outline: 2px solid var(--accent-color);
+  --outline-selected: 1px solid #fff;
+  --selected-color: #fff;
+  --nav-text-color: #26262b;
+
+  font-size: 14px;
+}
+
+.container {
+  box-sizing: border-box;
+  border: 1px solid var(--background-color);
+  border-radius: 6px;
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.grid-row {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(7, var(--cell-size));
+}
